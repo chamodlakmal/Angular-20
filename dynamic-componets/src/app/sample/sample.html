@@ -1,0 +1,12 @@
+<ng-container #container></ng-container>
+<button class="btn btn-outline-primary me-5" (click)="onCreate()">
+  Generate Component
+</button>
+
+<button class="btn btn-outline-danger" (click)="onDestroy()">
+  Destroy Component
+</button>
+
+<button class="btn btn-outline-secondary" (click)="onToggle()">
+  {{collapsedHome()? 'Expand' : 'Collapse'}} Home
+</button>

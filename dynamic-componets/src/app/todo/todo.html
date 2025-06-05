@@ -1,0 +1,9 @@
+<h1>{{`Title : ${title()}`}}</h1>
+
+<h2>{{`Description : ${description()}`}}</h2>
+
+<h3>{{`Collapsed : ${collapsed()}`}}</h3>
+
+<button (click)="closed.emit()">Close</button>
+
+<button (click)="toggleCollaped()">{{collapsed()?'Expand':'Collapsed'}}</button>

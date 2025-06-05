@@ -1,0 +1,15 @@
+<ng-container
+  [ngComponentOutlet]="component"
+  [ngComponentOutletInputs]="inputs"
+  [ngComponentOutletContent]="contentNode"
+></ng-container>
+
+<ng-template #content> <app-user /></ng-template>
+
+<button class="btn btn-outline-primary me-5" (click)="onCreate()">
+  Generate Component
+</button>
+
+<button class="btn btn-outline-danger" (click)="onDestroy()">
+  Destroy Component
+</button>

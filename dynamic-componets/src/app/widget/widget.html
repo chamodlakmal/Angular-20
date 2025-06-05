@@ -1,0 +1,11 @@
+<div class="card p-5">
+  <div class="card-title">{{title()}}</div>
+  <div class="card-body">{{body()}}</div>
+  <button class="btn btn-secondary" (click)="onClosed()">Close</button>
+  <ng-content [select]="'content1'">
+    <p>No Content...</p>
+  </ng-content>
+  <ng-content [select]="'content2'">
+    <p>No Content...</p>
+  </ng-content>
+</div>
